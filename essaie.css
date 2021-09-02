@@ -1,0 +1,290 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'poping',sans-serif ;
+    scroll-behavior: smooth; /*pour cree un effet de defiliment assez stylee*/
+}
+
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+
+header
+{
+    position: fixed;
+    top:0% ;
+    left:0% ;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex; /*permet de faire que tout sois alligne*/
+    justify-content: space-between;/*espace entre les elements*/
+    align-items: content;
+    transition: 0.5;
+}
+
+.logo
+{
+    color:#fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span
+{
+    color: #fb911f ;
+}
+
+.navbar
+{
+    display: flex;
+    position: relative;
+
+}
+.navbar{
+    list-style: none;
+}
+
+.navbar a
+{
+    color: #0c0c0c;;
+    text-decoration:none ;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.bn-reserve
+{
+    padding: 10px 20px;
+    background: #fb911f;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.bn-reserve:hover{
+    background: #d87710;
+    transition: ease-out;
+}
+
+header .navbar li a:hover
+{
+    color:#fb911f ;
+    border-bottom: 2px solid #fb911f ;
+}
+
+.baniere
+{
+    position : relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/resto.jpg);
+    background-size:cover ;
+
+}
+
+.baniere .contenu
+{
+    max-width: 70%;
+    text-align: center;
+}
+
+.baniere .contenu h2
+{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.contenu p:nth-child(2)/*cible le deuxieme paragraphe qui se trouve dans dans contenue*/
+{
+    color: #fff;
+    font-size: 1.2em ;
+}
+
+.btn1
+{
+    font-size: 1em;
+    color: #fff;
+    background: #d87710;
+    padding: 10px 20px;
+    display: inline-block; 
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition:0.5s;
+    margin-left: 10px;
+}
+
+.btn2
+{
+    font-size: 1em;
+    color: #fff;
+    background: #2a4963;
+    padding: 10px 20px;
+    display: inline-block; 
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition:0.5s;
+    margin-left: 10px;
+}
+
+.btn1:hover{
+    letter-spacing: 4px;
+}
+
+
+.btn2:hover{
+    letter-spacing: 4px;
+}
+
+section
+{
+    padding: 100px;
+}
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex; /*pour lalligne des elements presents*/
+    justify-content: space-between;
+}
+
+.row .col50
+{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2
+{
+    margin-bottom: 20px;
+
+}
+
+.titre-text
+{
+    color:#000 ;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre .btn1
+{
+    position: relative;
+    top: 35px;
+}
+
+.titre-text span
+{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+/*partie reserve a un menu*/
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;/**/
+    flex-direction:column ;/*les elements seront en collone*/
+}
+
+.menu
+{
+    margin-top: -100px;
+}
+
+.menu .contenu
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .contenu .box 
+{
+    width: 350px;
+    margin-top: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.menu .contenu .box .inbox
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .contenu .box .inbox img
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.temoignage .contenu 
+{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.temoignage
+{
+    background-image: url(image/table.jpg);
+    background-size: cover;
+}
+
+.temoignage .contenu .box
+{
+    
+    width: 350px;
+    margin-top: 20px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.temoignage .contenu .box .inbox img
+{
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.contenu 
+{
+    position: relative;
+    top: 40px;
+}
+.temoignage .contenu .box .inbox
+{
+    width: 100%;
+    height: 300px;
+}
+
